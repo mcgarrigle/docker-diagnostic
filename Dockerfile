@@ -7,5 +7,6 @@ RUN pip3 install redis
 ADD README.md /root
 USER root
 WORKDIR /root
+LABEL wales.mac.image.name="diagnostic"
 LABEL wales.mac.image.git="https://github.com/mcgarrigle/docker-diagnostic.git"
 CMD ["/bin/bash"]
